@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { BsTranslate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
-import ProgressBar from "@/src/components/elements/Progress";
+import ProgressBar from "@/components/elements/Progress";
 
 export default function Index() {
   return (

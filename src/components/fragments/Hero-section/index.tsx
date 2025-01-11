@@ -1,32 +1,35 @@
-import Navbar from "@/components/elements/Navbar";
-// import Image from "next/image";
 import BackgroundGradient from "@/components/elements/Background-gradient";
 // import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 export default function index() {
   return (
     <BackgroundGradient>
-      <Navbar />
-      <div className="h-full flex flex-col items-center justify-center gap-4 py-8 px-2">
-        {/* <Image
+      <div className="h-screen flex py-12 px-36 justify-start">
+        {/* <img
           src="/owndr-high-resolution-logo-transparent.svg"
           alt="company-logo"
           width={120}
           height={120}
         /> */}
-        <div className="flex flex-col items-center justify-center gap-1">
-          <span className="text-5xl ">Find your</span>
-          <span className="text-8xl font-bold tracking-wide">Truth Wander</span>
+        <div className="flex flex-col items-start justify-center gap-1">
+          <span className="text-4xl font-bold tracking-wide ">
+            Find your truth wander
+          </span>
+
           <span className="text-sm text-[#4F4F4F]">
-            Explore your trips with Confidence at Your Fingertips
+            {/* Explore your trips with Confidence at Your Fingertips */}
+            Experience the freedom to explore with confidence. Our platform
+            empowers you to plan trips effortlessly, find destinations that
+            resonate with your style, and make every journey a true reflection
+            of who you are
           </span>
         </div>
-        <div className="w-full mt-6">
+        {/*  <div className="w-full mt-6">
           <form className="mx-auto max-w-xl">
             <label htmlFor="location-name" className="sr-only">
               Post
             </label>
-            {/* <div className="relative flex items-center">
+            <div className="relative flex items-center">
               <div className="relative w-full max-w-xl">
                 <input
                   id="location-name"
@@ -45,9 +48,9 @@ export default function index() {
               >
                 Find me
               </button>
-            </div> */}
+            </div> 
           </form>
-        </div>
+        </div>*/}
       </div>
     </BackgroundGradient>
   );

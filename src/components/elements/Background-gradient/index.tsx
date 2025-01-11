@@ -2,7 +2,7 @@
 
 const BackgroundGradient = ({ children }: any) => {
   return (
-    <div className="relative h-full w-full flex items-center justify-center bg-gradient-to-b from-[#e9a6ff] to-white">
+    <div className="relative h-full w-full flex items-center justify-center bg-gradient-to-b from-[#6087a7] to-white">
       {/* Background SVG */}
       <svg
         viewBox="0 0 512 1024"

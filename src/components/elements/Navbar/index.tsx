@@ -4,7 +4,7 @@ import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  NavbarItem,
+  // NavbarItem,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -23,8 +23,8 @@ export default function App() {
           <img
             src="/owndr-high-resolution-logo-transparent.svg"
             alt="company-logo"
-            width={240}
-            height={240}
+            width={280}
+            height={280}
           />
         </NavbarBrand>
       </NavbarContent>
@@ -33,7 +33,7 @@ export default function App() {
         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         className="lg:hidden md:hidden"
       />
-      <NavbarContent className="gap-4 sm:hidden xs:hidden" justify="center">
+      {/* <NavbarContent className="gap-4 sm:hidden xs:hidden" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#" className="text-sm">
             What is Owndr?
@@ -49,7 +49,7 @@ export default function App() {
             FAQ
           </Link>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
