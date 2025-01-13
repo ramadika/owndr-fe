@@ -54,8 +54,6 @@ export default function Index() {
     },
   ];
 
-  console.log(popular_dummy);
-
   return (
     <div className="flex flex-col mb-12 px-36">
       <div>
@@ -101,7 +99,7 @@ export default function Index() {
           to="/destination"
           className="border rounded-xl px-6 py-2 border-[#103f66] text-sm hover:opacity-40 duration-300"
         >
-          Explore more destination
+          Load more destination
         </NavLink>
       </div>
     </div>

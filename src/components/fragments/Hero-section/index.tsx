@@ -4,14 +4,16 @@ import BackgroundGradient from "@/components/elements/Background-gradient";
 export default function index() {
   return (
     <BackgroundGradient>
-      <div className="h-screen flex py-12 px-36 justify-start">
-        {/* <img
-          src="/owndr-high-resolution-logo-transparent.svg"
-          alt="company-logo"
-          width={120}
-          height={120}
-        /> */}
+      <div className="h-[50vh] flex py-12 px-36 justify-start">
         <div className="flex flex-col items-start justify-center gap-1">
+          {/* <div>
+            <img
+              src="/owndr-high-resolution-logo-transparent.svg"
+              alt="company-logo"
+              width={360}
+              height={360}
+            />
+          </div> */}
           <span className="text-4xl font-bold tracking-wide ">
             Find your truth wander
           </span>
@@ -23,8 +25,11 @@ export default function index() {
             resonate with your style, and make every journey a true reflection
             of who you are
           </span>
+          <button className="bg-[#ea598e] text-white rounded-lg px-4 py-1">
+            Join Owndr &#8594;
+          </button>
         </div>
-        {/*  <div className="w-full mt-6">
+        {/* <div className="w-full mt-6">
           <form className="mx-auto max-w-xl">
             <label htmlFor="location-name" className="sr-only">
               Post
@@ -35,7 +40,7 @@ export default function index() {
                   id="location-name"
                   name="location-name"
                   type="text"
-                  placeholder="Where is your destiny?"
+                  placeholder="What's happening?"
                   className="w-full pl-12 pr-20 py-4 text-black bg-white border-0 rounded-full shadow-sm ring-1 ring-inset ring-[#E6DFF1] focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6"
                 />
                 <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-gray-400">
@@ -50,7 +55,7 @@ export default function index() {
               </button>
             </div> 
           </form>
-        </div>*/}
+        </div> */}
       </div>
     </BackgroundGradient>
   );

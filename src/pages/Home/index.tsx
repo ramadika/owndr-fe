@@ -1,6 +1,8 @@
 import Hero from "@/components/fragments/Hero-section";
-import Feed from "@/components/fragments/Feed-section";
-import Popular from "@/components/fragments/Popular-section";
+// import Feed from "@/components/fragments/Feed-section";
+import PopularPlaces from "@/components/fragments/Popular-places-section";
+import PopularFeed from "@/components/fragments/Popular-feed-section";
+import LatestFeed from "@/components/fragments/Latest-feed-section";
 // import Navbar from "@/components/elements/Navbar";
 
 export default function index() {
@@ -8,8 +10,10 @@ export default function index() {
     <div className="h-full font-sans flex flex-col gap-4">
       {/* <Navbar /> */}
       <Hero />
-      <Popular />
-      <Feed />
+      <PopularFeed />
+      <LatestFeed />
+      <PopularPlaces />
+      {/* <Feed /> */}
     </div>
   );
 }
