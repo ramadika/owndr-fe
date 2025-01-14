@@ -70,7 +70,7 @@ export default function Index() {
         </div>
         <div>
           <NavLink
-            to="/destination"
+            to="/feed"
             className="text-sm text-[#ea598e] font-semibold hover:opacity-40 duration-300"
           >
             See all &#8594;

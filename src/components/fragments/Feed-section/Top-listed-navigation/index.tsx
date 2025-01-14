@@ -1,6 +1,6 @@
 export default function index() {
   return (
-    <div>
+    <div className="py-12">
       <div>
         <h2 className="font-semibold underline underline-offset-8">
           Top Listed Destination
