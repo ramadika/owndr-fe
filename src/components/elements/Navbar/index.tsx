@@ -19,7 +19,7 @@ export default function App() {
             height={100}
           />
         </NavbarBrand>
-        <NavbarContent className=" sm:flex gap-4">
+        <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
             <Link color="foreground" href="#">
               What is Owndr?
@@ -33,7 +33,7 @@ export default function App() {
         </NavbarContent>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="lg:flex underline underline-offset-4">
+        <NavbarItem className="lg:flex underline underline-offset-4 text-sm">
           <Link href="#">Already have an account?</Link>
         </NavbarItem>
         <NavbarItem>
@@ -42,7 +42,7 @@ export default function App() {
             color="primary"
             href="#"
             variant="flat"
-            className="bg-[#ea598e] text-white rounded-lg py-1 px-4 hover:opacity-40 duration-100"
+            className="border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-100"
           >
             Sign up
           </Button>

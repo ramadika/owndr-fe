@@ -75,7 +75,7 @@ export default function Index({ children }: any) {
               <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
                 <div className="flex h-16 shrink-0 items-center">
                   <img
-                    alt="Your Company"
+                    alt="owndr-logo"
                     src="/owndr-high-resolution-logo-transparent-cropped-blue.svg"
                     className="h-8 w-auto"
                   />

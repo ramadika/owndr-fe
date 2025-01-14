@@ -22,7 +22,7 @@ export default function index() {
             of who you are
           </span>
           <button className="bg-[#ea598e] text-white rounded-lg px-4 py-1 hover:opacity-40 duration-100">
-            Join Owndr &#8594;
+            Explore Posts &#8594;
           </button>
         </div>
       </div>
