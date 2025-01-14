@@ -1,35 +1,37 @@
-import BackgroundGradient from "@/components/elements/Background-gradient";
+// import BackgroundGradient from "@/components/elements/Background-gradient";
+import BackgroundVideo from "@/components/elements/Background-video";
+import Navbar from "@/components/elements/Navbar";
 // import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 export default function index() {
   return (
-    <BackgroundGradient>
-      <div className="h-[50vh] flex py-12 px-36 justify-start">
-        <div className="flex flex-col items-start justify-center gap-1">
-          {/* <div>
-            <img
-              src="/owndr-high-resolution-logo-transparent.svg"
-              alt="company-logo"
-              width={360}
-              height={360}
-            />
-          </div> */}
+    <BackgroundVideo>
+      <div className="pt-8">
+        <Navbar />
+      </div>
+      <div className="flex px-36 justify-start mt-24">
+        <div className="flex flex-col items-start justify-center gap-4">
           <span className="text-4xl font-bold tracking-wide ">
             Find your truth wander
           </span>
 
-          <span className="text-sm text-[#4F4F4F]">
-            {/* Explore your trips with Confidence at Your Fingertips */}
+          <span className="text-sm">
             Experience the freedom to explore with confidence. Our platform
             empowers you to plan trips effortlessly, find destinations that
             resonate with your style, and make every journey a true reflection
             of who you are
           </span>
-          <button className="bg-[#ea598e] text-white rounded-lg px-4 py-1">
+          <button className="bg-[#ea598e] text-white rounded-lg px-4 py-1 hover:opacity-40 duration-100">
             Join Owndr &#8594;
           </button>
         </div>
-        {/* <div className="w-full mt-6">
+      </div>
+    </BackgroundVideo>
+  );
+}
+
+{
+  /* <div className="w-full mt-6">
           <form className="mx-auto max-w-xl">
             <label htmlFor="location-name" className="sr-only">
               Post
@@ -55,8 +57,5 @@ export default function index() {
               </button>
             </div> 
           </form>
-        </div> */}
-      </div>
-    </BackgroundGradient>
-  );
+        </div> */
 }

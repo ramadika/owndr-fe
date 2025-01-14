@@ -59,7 +59,10 @@ export default function Index() {
     <div className="flex flex-col mb-12 px-36">
       <div className="flex justify-between items-start">
         <div>
-          <h2 className="font-semibold text-2xl">Latest Feed</h2>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-6 bg-[#103f66]"></div>
+            <h2 className="font-semibold text-2xl">Latest Feed</h2>
+          </div>
           <h5>
             Stay updated with the latest posts, updates, and activities
             happening right now. Explore what's trending and never miss a beat.

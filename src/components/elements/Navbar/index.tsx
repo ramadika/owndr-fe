@@ -1,75 +1,53 @@
-"use client";
-import { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
-  // NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
+  NavbarItem,
   Link,
+  Button,
 } from "@nextui-org/react";
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const menuItems = ["What is Owndr?", "How it works?", "FAQ"];
-
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="backdrop-saturate-10">
-      <NavbarContent>
+    <Navbar>
+      <NavbarContent justify="start">
         <NavbarBrand>
           <img
-            src="/owndr-high-resolution-logo-transparent.svg"
+            src="/owndr-high-resolution-logo-transparent-cropped.svg"
             alt="company-logo"
-            width={280}
-            height={280}
+            width={100}
+            height={100}
           />
         </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarMenuToggle
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-        className="lg:hidden md:hidden"
-      />
-      {/* <NavbarContent className="gap-4 sm:hidden xs:hidden" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#" className="text-sm">
-            What is Owndr?
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#" className="text-sm">
-            How it works?
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#" className="text-sm">
-            FAQ
-          </Link>
-        </NavbarItem>
-      </NavbarContent> */}
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
+        <NavbarContent className=" sm:flex gap-4">
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              What is Owndr?
             </Link>
-          </NavbarMenuItem>
-        ))}
-      </NavbarMenu>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link aria-current="page" href="#">
+              FAQ
+            </Link>
+          </NavbarItem>
+        </NavbarContent>
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="lg:flex underline underline-offset-4">
+          <Link href="#">Already have an account?</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            as={Link}
+            color="primary"
+            href="#"
+            variant="flat"
+            className="bg-[#ea598e] text-white rounded-lg py-1 px-4 hover:opacity-40 duration-100"
+          >
+            Sign up
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
     </Navbar>
   );
 }
