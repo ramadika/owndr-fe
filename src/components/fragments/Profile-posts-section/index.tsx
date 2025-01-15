@@ -1,21 +1,13 @@
-// import { useFeed } from "../hooks";
-import {
-  FaCircleCheck,
-  FaCommentDots,
-  FaCircleXmark,
-  FaPhotoFilm,
-} from "react-icons/fa6";
-import { RiSendPlaneFill } from "react-icons/ri";
+import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { BsTranslate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
 
 export default function Index() {
-  // const { activeTab, tabs, setActiveTab } = useFeed();
   const feed_dummy_data = [
     {
       id: 0,
-      author: "Johan Redd",
+      author: "Philip Well",
       created_at: "40 minutes ago",
       place_name: "Rammang-rammang",
       place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
@@ -27,7 +19,7 @@ export default function Index() {
     },
     {
       id: 1,
-      author: "Thamrin",
+      author: "Philip Well",
       created_at: "44 minutes ago",
       place_name: "Kuta Beach",
       place_url: "https://maps.app.goo.gl/xT1JsYAv73C6Ufy5A",
@@ -39,7 +31,7 @@ export default function Index() {
     },
     {
       id: 2,
-      author: "Burhan",
+      author: "Philip Well",
       created_at: "45 minutes ago",
       place_name: "Musi River",
       place_url: "https://maps.app.goo.gl/W93cRGdeEDLuFBj16",
@@ -51,7 +43,7 @@ export default function Index() {
     },
     {
       id: 3,
-      author: "Amin faiz",
+      author: "Philip Well",
       created_at: "47 minutes ago",
       place_name: "Tumpak Sewu Waterfall",
       place_url: "https://maps.app.goo.gl/fx8RYTBw13xFWhrV8",
@@ -63,7 +55,7 @@ export default function Index() {
     },
     {
       id: 4,
-      author: "Marco alex",
+      author: "Philip Well",
       created_at: "55 minutes ago",
       place_name: "Blue Flames, Ijen",
       place_url: "https://maps.app.goo.gl/xkFyYt4L4L7ZJzJv9",
@@ -76,45 +68,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="flex flex-col gap-4 py-12">
-      <div className="relative flex items-center w-full">
-        <form className="relative w-full " onSubmit={(e) => e.preventDefault()}>
-          <input
-            id="posting-name"
-            name="posting-name"
-            type="text"
-            placeholder="What's happening?"
-            className="w-full pl-8 pr-20 py-4 text-black bg-white border-0 rounded-xl shadow-sm ring-1 ring-inset ring-[#E6DFF1] focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6"
-          />
-          <button
-            type="submit"
-            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#103f66] px-2 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#B389D1] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            <RiSendPlaneFill />
-          </button>
-          <div className="absolute right-12 top-1/2 -translate-y-1/2 rounded-xl px-2 py-2.5 font-semibold hover:opacity-55 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            <FaPhotoFilm color="#84dcc6" />
-          </div>
-        </form>
-      </div>
-      {/* <div className="flex flex-col items-center sticky my-4">
-        <div className="flex w-full justify-around text-gray-500">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-2 text-center ${
-                activeTab === tab
-                  ? "text-black font-semibold border-b-2 border-[#a594f9]"
-                  : "border-b-2 border-transparent"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
-        </div>
-        <div className="w-full border-t border-gray-300 " />
-      </div> */}
+    <div className="flex flex-col gap-4">
       {feed_dummy_data.map((item) => (
         <div className="w-full border border-[#E6DFF1] rounded-xl py-4 px-8 flex flex-col gap-2 shadow-md">
           <div className="flex items-center gap-2">

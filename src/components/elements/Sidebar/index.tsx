@@ -169,7 +169,7 @@ export default function Index({ children }: any) {
                       className="size-8 rounded-full bg-gray-50"
                     />
                     <span className="sr-only">Your profile</span>
-                    <span aria-hidden="true">Philip well</span>
+                    <span aria-hidden="true">Philip Well</span>
                   </NavLink>
                 </li>
               </ul>

@@ -3,6 +3,7 @@ import Hero from "@/components/fragments/Hero-section";
 import PopularPlaces from "@/components/fragments/Popular-places-section";
 import PopularFeed from "@/components/fragments/Popular-feed-section";
 import LatestFeed from "@/components/fragments/Latest-feed-section";
+import Footer from "@/components/elements/Footer";
 // import Navbar from "@/components/elements/Navbar";
 
 export default function index() {
@@ -13,6 +14,7 @@ export default function index() {
       <PopularFeed />
       <LatestFeed />
       <PopularPlaces />
+      <Footer />
       {/* <Feed /> */}
     </div>
   );
