@@ -1,6 +1,6 @@
 import Sidebar from "@/components/elements/Sidebar";
 import FeedContent from "@/components/fragments/Feed-content";
-import TopNav from "@/components/fragments/Top-listed-navigation";
+// import TopNav from "@/components/fragments/Top-listed-navigation";
 
 export default function index() {
   return (
@@ -10,12 +10,12 @@ export default function index() {
           {/* <div className="flex flex-col gap-2 px-2 w-2/12">
               <ProfileNav />
             </div> */}
-          <div className="flex flex-col gap-6 px-12 w-9/12 border-r">
+          <div className="flex flex-col pr-12">
             <FeedContent />
           </div>
-          <div className="flex flex-col gap-2 px-2 w-3/12">
+          {/* <div className="flex flex-col gap-2 px-2 w-3/12">
             <TopNav />
-          </div>
+          </div> */}
         </div>
       </Sidebar>
     </div>
