@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
 
 export default function Index() {
@@ -10,6 +11,8 @@ export default function Index() {
       img_alt: "img_-_news",
       author: "John Redd",
       created_at: "5 minutes ago",
+      place_name: "Rammang-rammang",
+      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
       title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       score: 10,
@@ -20,6 +23,8 @@ export default function Index() {
       img_alt: "img_-_news",
       author: "Francis White",
       created_at: "10 minutes ago",
+      place_name: "Rammang-rammang",
+      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
       title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       score: 17,
@@ -30,6 +35,8 @@ export default function Index() {
       img_alt: "img_-_news",
       author: "Greg",
       created_at: "15 minutes ago",
+      place_name: "Rammang-rammang",
+      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
       title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       score: 20,
@@ -40,6 +47,8 @@ export default function Index() {
       img_alt: "img_-_news",
       author: "Mustofa",
       created_at: "15 minutes ago",
+      place_name: "Rammang-rammang",
+      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
       title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       score: 30,
@@ -50,6 +59,8 @@ export default function Index() {
       img_alt: "img_-_news",
       author: "Ibrahim",
       created_at: "25 minutes ago",
+      place_name: "Rammang-rammang",
+      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
       title: "Lorem ipsum dolor sit amet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       score: 40,
@@ -97,19 +108,28 @@ export default function Index() {
                   {item.created_at}
                 </span>
               </div>
+              <a
+                target="_blank"
+                rel="noopener"
+                href={item.place_url}
+                className="hover:opacity-40 duration-300 flex items-center gap-1 underline underline-offset-4 text-[#0077b6] my-1"
+              >
+                <IoLocationSharp size={12} />
+                <span className="text-xs font-semibold">{item.place_name}</span>
+              </a>
               <h2 className="text-lg font-semibold">{item.title}</h2>
               <h5 className="text-sm">{item.desc}</h5>
               <div className="mt-6">
                 <ProgressBar />
               </div>
               <div className="flex items-center gap-2 mt-4">
-                <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2">
+                <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
                   <FaCircleCheck />
                 </div>
-                <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2">
+                <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
                   <FaCircleXmark />
                 </div>
-                <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2">
+                <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
                   <FaCommentDots />
                 </div>
               </div>

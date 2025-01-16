@@ -90,7 +90,7 @@ export default function Index() {
               target="_blank"
               rel="noopener"
               href={item.place_url}
-              className="hover:opacity-40 duration-100"
+              className="hover:opacity-40 duration-300"
             >
               <span className="text-sm font-semibold">{item.place_name}</span>
             </a>
@@ -106,15 +106,15 @@ export default function Index() {
             <ProgressBar />
           </div>
           <div className="flex items-center gap-2 mt-4">
-            <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleCheck />
               Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleXmark />
               Not Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCommentDots />
               Comment
             </div>

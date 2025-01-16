@@ -130,17 +130,15 @@ export default function Index() {
             width={100}
             height={100}
           />
-          <div className="flex items-center gap-1 underline underline-offset-4 text-[#0077b6]">
+          <a
+            target="_blank"
+            rel="noopener"
+            href={item.place_url}
+            className="hover:opacity-40 duration-300 flex items-center gap-1 underline underline-offset-4 text-[#0077b6] my-1"
+          >
             <IoLocationSharp />
-            <a
-              target="_blank"
-              rel="noopener"
-              href={item.place_url}
-              className="hover:opacity-40 duration-100"
-            >
-              <span className="text-sm font-semibold">{item.place_name}</span>
-            </a>
-          </div>
+            <span className="text-sm font-semibold">{item.place_name}</span>
+          </a>
           <div className="gap-2 flex flex-col tracking-wide text-default-700">
             <h2>{item.desc}</h2>
             <div className="flex justify-between w-fit gap-2 items-center border rounded-full px-4 py-2 text-xs border-slate-800">
@@ -152,15 +150,15 @@ export default function Index() {
             <ProgressBar />
           </div>
           <div className="flex items-center gap-2 mt-4">
-            <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleCheck />
               Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleXmark />
               Not Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCommentDots />
               Comment
             </div>

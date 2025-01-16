@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 // import BackgroundGradient from "@/components/elements/Background-gradient";
 import BackgroundVideo from "@/components/elements/Background-video";
 import Navbar from "@/components/elements/Navbar";
@@ -21,9 +22,12 @@ export default function index() {
             resonate with your style, and make every journey a true reflection
             of who you are
           </span>
-          <button className="bg-[#ea598e] text-white rounded-lg px-4 py-1 hover:opacity-40 duration-100">
+          <NavLink
+            to="/feed"
+            className="bg-[#ea598e] text-white rounded-lg px-4 py-1 hover:opacity-40 duration-300"
+          >
             Explore Posts &#8594;
-          </button>
+          </NavLink>
         </div>
       </div>
     </BackgroundVideo>

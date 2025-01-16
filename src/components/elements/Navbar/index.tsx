@@ -21,20 +21,39 @@ export default function App() {
         </NavbarBrand>
         <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link
+              color="foreground"
+              href="#"
+              className="hover:opacity-40 duration-300"
+            >
               What is Owndr?
             </Link>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link aria-current="page" href="#">
+            <Link
+              aria-current="page"
+              href="#"
+              className="hover:opacity-40 duration-300"
+            >
               FAQ
+            </Link>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <Link
+              aria-current="page"
+              href="#"
+              className="hover:opacity-40 duration-300"
+            >
+              Contact us
             </Link>
           </NavbarItem>
         </NavbarContent>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="lg:flex underline underline-offset-4 text-sm">
-          <Link href="#">Already have an account?</Link>
+          <Link href="#" className="hover:opacity-40 duration-300">
+            Already have an account?
+          </Link>
         </NavbarItem>
         <NavbarItem>
           <Button
@@ -42,7 +61,7 @@ export default function App() {
             color="primary"
             href="#"
             variant="flat"
-            className="border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-100"
+            className="border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300"
           >
             Sign up
           </Button>

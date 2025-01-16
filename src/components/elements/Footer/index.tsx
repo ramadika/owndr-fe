@@ -82,7 +82,7 @@ export default function Index() {
           <div className="mt-8 flex justify-center">
             <a
               href="#"
-              className="rounded-md bg-[#103f66] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-40 duration-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md bg-[#103f66] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:opacity-40 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Get started
             </a>
