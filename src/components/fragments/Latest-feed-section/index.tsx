@@ -2,70 +2,9 @@ import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
+import { popular_dummy } from "@/utils/contants";
 
 export default function Index() {
-  const popular_dummy = [
-    {
-      img_src:
-        "https://images.unsplash.com/photo-1490676940747-c906c30765d6?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      img_alt: "img_-_news",
-      author: "John Redd",
-      created_at: "5 minutes ago",
-      place_name: "Rammang-rammang",
-      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      score: 10,
-    },
-    {
-      img_src:
-        "https://images.unsplash.com/photo-1707538322543-c934e7ba49ec?q=80&w=2268&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      img_alt: "img_-_news",
-      author: "Francis White",
-      created_at: "10 minutes ago",
-      place_name: "Rammang-rammang",
-      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      score: 17,
-    },
-    {
-      img_src:
-        "https://images.unsplash.com/photo-1721661431611-ba5518f20d83?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      img_alt: "img_-_news",
-      author: "Greg",
-      created_at: "15 minutes ago",
-      place_name: "Rammang-rammang",
-      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      score: 20,
-    },
-    {
-      img_src:
-        "https://images.unsplash.com/photo-1494947356691-434358cea5a3?q=80&w=2674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      img_alt: "img_-_news",
-      author: "Mustofa",
-      created_at: "15 minutes ago",
-      place_name: "Rammang-rammang",
-      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      score: 30,
-    },
-    {
-      img_src:
-        "https://images.unsplash.com/photo-1674194134311-9ff1d21cd4f1?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      img_alt: "img_-_news",
-      author: "Ibrahim",
-      created_at: "25 minutes ago",
-      place_name: "Rammang-rammang",
-      place_url: "https://maps.app.goo.gl/bGXXT29tBaiCL6dR7",
-      title: "Lorem ipsum dolor sit amet",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      score: 40,
-    },
-  ];
   return (
     <div className="flex flex-col mb-12 px-36">
       <div className="flex justify-between items-start">
@@ -82,7 +21,7 @@ export default function Index() {
         <div>
           <NavLink
             to="/feed"
-            className="text-sm text-[#ea598e] font-semibold hover:opacity-40 duration-300"
+            className="text-sm bg-[#ea598e] text-white rounded-lg px-4 py-1 font-semibold hover:opacity-40 duration-300"
           >
             See all &#8594;
           </NavLink>
