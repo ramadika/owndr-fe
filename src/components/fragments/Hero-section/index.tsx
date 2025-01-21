@@ -1,38 +1,52 @@
+import { NavLink } from "react-router";
+// import BackgroundGradient from "@/components/elements/Background-gradient";
+import BackgroundVideo from "@/components/elements/Background-video";
 import Navbar from "@/components/elements/Navbar";
-// import Image from "next/image";
-import BackgroundGradient from "@/components/elements/Background-gradient";
 // import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 export default function index() {
   return (
-    <BackgroundGradient>
-      <Navbar />
-      <div className="h-full flex flex-col items-center justify-center gap-4 py-8 px-2">
-        {/* <Image
-          src="/owndr-high-resolution-logo-transparent.svg"
-          alt="company-logo"
-          width={120}
-          height={120}
-        /> */}
-        <div className="flex flex-col items-center justify-center gap-1">
-          <span className="text-5xl ">Find your</span>
-          <span className="text-8xl font-bold tracking-wide">Truth Wander</span>
-          <span className="text-sm text-[#4F4F4F]">
-            Explore your trips with Confidence at Your Fingertips
+    <BackgroundVideo>
+      <div className="pt-8">
+        <Navbar />
+      </div>
+      <div className="flex px-36 justify-start mt-24">
+        <div className="flex flex-col items-start justify-center gap-4">
+          <span className="text-4xl font-bold tracking-wide ">
+            Find your truth wander
           </span>
+
+          <span className="text-sm">
+            Experience the freedom to explore with confidence. Our platform
+            empowers you to plan trips effortlessly, find destinations that
+            resonate with your style, and make every journey a true reflection
+            of who you are
+          </span>
+          <NavLink
+            to="/feed"
+            className="bg-[#ea598e] text-white rounded-lg px-4 py-1 hover:opacity-40 duration-300"
+          >
+            Explore Posts &#8594;
+          </NavLink>
         </div>
-        <div className="w-full mt-6">
+      </div>
+    </BackgroundVideo>
+  );
+}
+
+{
+  /* <div className="w-full mt-6">
           <form className="mx-auto max-w-xl">
             <label htmlFor="location-name" className="sr-only">
               Post
             </label>
-            {/* <div className="relative flex items-center">
+            <div className="relative flex items-center">
               <div className="relative w-full max-w-xl">
                 <input
                   id="location-name"
                   name="location-name"
                   type="text"
-                  placeholder="Where is your destiny?"
+                  placeholder="What's happening?"
                   className="w-full pl-12 pr-20 py-4 text-black bg-white border-0 rounded-full shadow-sm ring-1 ring-inset ring-[#E6DFF1] focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6"
                 />
                 <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-gray-400">
@@ -45,10 +59,7 @@ export default function index() {
               >
                 Find me
               </button>
-            </div> */}
+            </div> 
           </form>
-        </div>
-      </div>
-    </BackgroundGradient>
-  );
+        </div> */
 }

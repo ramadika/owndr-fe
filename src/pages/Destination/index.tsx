@@ -1,10 +1,7 @@
-"use client";
-
-import React from "react";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { BsTranslate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
-import ProgressBar from "@/src/components/elements/Progress";
+import ProgressBar from "@/components/elements/Progress";
 
 export default function Index() {
   return (
@@ -73,15 +70,15 @@ export default function Index() {
             <ProgressBar />
           </div>
           <div className="flex items-center gap-2 mt-4">
-            <div className="flex items-center gap-2 rounded-lg bg-[#dfffd6] text-[#59824e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg bg-[#dfffd6] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleCheck />
               Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg bg-[#ffafcc] text-[#ea598e] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg bg-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCircleXmark />
               Not Valid
             </div>
-            <div className="flex items-center gap-2 rounded-lg bg-[#edf2fb] text-[#63728c] text-sm px-3 py-2">
+            <div className="flex items-center gap-2 rounded-lg bg-[#edf2fb] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
               <FaCommentDots />
               Comment
             </div>
