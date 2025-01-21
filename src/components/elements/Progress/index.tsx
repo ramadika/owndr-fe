@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div>
       <div className="flex gap-2 items-center mb-2">
-        <span className="tracking-wider font-medium text-default-600 text-xs">
+        <span className="tracking-wider font-medium text-default-600 text-[0.5rem]">
           Information Score
         </span>
         <span className="text-base font-bold tracking-wide">{value}</span>

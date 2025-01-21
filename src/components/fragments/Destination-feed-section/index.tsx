@@ -1,8 +1,9 @@
+import { NavLink } from "react-router";
 import { top_listed_dummy } from "@/utils/contants";
 
 export default function Index() {
   return (
-    <div className="py-12">
+    <div className="flex flex-col gap-2">
       <div>
         <h2 className="font-semibold underline underline-offset-8">
           Explore Destinations
@@ -24,6 +25,12 @@ export default function Index() {
           </div>
         ))}
       </div>
+      <NavLink
+        to="/feed"
+        className="text-[#ea598e] text-xs mt-2 underline underline-offset-4 hover:opacity-40 duration-300"
+      >
+        Explore More &#8594;
+      </NavLink>
     </div>
   );
 }

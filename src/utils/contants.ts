@@ -161,6 +161,30 @@ export const discover_dummy = [
       "https://media.istockphoto.com/id/1500771900/photo/boat-are-docking-below-of-ampera-bridge-palembang-transportation-at-musi-river.jpg?s=612x612&w=0&k=20&c=6XdKc-svmcMEp7ajhA4xwnkQLX6K1BHgOpFegCYO7Bk=",
     img_alt: "musi_river",
   },
+  {
+    id: 3,
+    author: "David",
+    created_at: "53 minutes ago",
+    place_name: "Universal Studios Singapore",
+    place_url: "https://maps.app.goo.gl/rMVkiqREfeg2Kf238",
+    title: "Lorem ipsum dolor sit amet",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img_src:
+      "https://asset.kompas.com/crops/RnqONH0Zbr6vuq9hvNTPAFx5ZiM=/0x0:3687x2458/1200x800/data/photo/2022/05/26/628f3091ef272.jpg",
+    img_alt: "universal_studios_singapore",
+  },
+  {
+    id: 4,
+    author: "Will",
+    created_at: "65 minutes ago",
+    place_name: "Gyeongbokgung Palace",
+    place_url: "https://maps.app.goo.gl/VQ9bqY2YR2s5uCMK8",
+    title: "Lorem ipsum dolor sit amet",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img_src:
+      "https://images.unsplash.com/photo-1675001913150-95b51da31fac?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img_alt: "gyeongbokgung_palace",
+  },
 ];
 
 export const feed_profile_dummy_data = [
