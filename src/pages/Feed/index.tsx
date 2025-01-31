@@ -1,10 +1,10 @@
 // import Sidebar from "@/components/elements/Sidebar";
-import FeedContent from "@/components/fragments/Feed-content-section";
-import FeedForm from "@/components/fragments/Feed-form-section";
-import Discover from "@/components/fragments/Feed-discover-section";
-import Destination from "@/components/fragments/Feed-explore-destination-section";
-import Navbar from "@/components/fragments/Feed-navbar-section";
-import Donate from "@/components/fragments/Donate-floating-section";
+import FeedContent from "@/components/fragments/Feed/Content-section";
+import FeedForm from "@/components/fragments/Feed/Form-section";
+import Discover from "@/components/fragments/Feed/Discover-section";
+import Destination from "@/components/fragments/Feed/Explore-destination-section";
+import Navbar from "@/components/fragments/Feed/Navbar-section";
+import Donate from "@/components/fragments/Support-us/Floating-button";
 
 export default function index() {
   return (

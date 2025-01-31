@@ -1,6 +1,6 @@
 import Sidebar from "@/components/elements/Sidebar";
-import ProfileInformation from "@/components/fragments/Profile-information-section";
-import ProfilePosts from "@/components/fragments/Profile-posts-section";
+import ProfileInformation from "@/components/fragments/Profile/Information-section";
+import ProfilePosts from "@/components/fragments/Profile/Content-section";
 
 export default function index() {
   return (

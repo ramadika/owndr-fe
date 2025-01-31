@@ -12,18 +12,24 @@ export default function App() {
     <Navbar isBlurred={false}>
       <NavbarContent justify="start">
         <NavbarBrand>
-          <img
-            src="/owndr-high-resolution-logo-transparent-cropped-blue.svg"
-            alt="company-logo"
-            width={100}
-            height={100}
-          />
+          <Link
+            color="foreground"
+            href="/"
+            className="hover:opacity-40 duration-300"
+          >
+            <img
+              src="/owndr-high-resolution-logo-transparent-cropped-blue.svg"
+              alt="company-logo"
+              width={100}
+              height={100}
+            />
+          </Link>
         </NavbarBrand>
         <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
             <Link
               color="foreground"
-              href="#"
+              href="/about"
               className="hover:opacity-40 duration-300"
             >
               What is Owndr?

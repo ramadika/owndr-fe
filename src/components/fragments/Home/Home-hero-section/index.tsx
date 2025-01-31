@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 // import BackgroundGradient from "@/components/elements/Background-gradient";
 import BackgroundVideo from "@/components/elements/Background-video";
-import Navbar from "@/components/elements/Navbar";
+import Navbar from "@/components/elements/Navbar-white-logo";
 // import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 
 export default function index() {

@@ -4,6 +4,7 @@ import Destination from "@/pages/Destination";
 import Feed from "@/pages/Feed";
 import Profile from "@/pages/Profile";
 import FaQ from "@/pages/FaQ";
+import About from "@/pages/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/faq" element={<FaQ />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </div>

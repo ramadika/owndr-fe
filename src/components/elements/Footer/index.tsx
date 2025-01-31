@@ -64,7 +64,7 @@ const navigation = {
 
 export default function Index() {
   return (
-    <div>
+    <div className="z-50">
       <div className="mx-auto max-w-7xl px-6  sm:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl text-center pt-8 pb-24">
           <hgroup>
