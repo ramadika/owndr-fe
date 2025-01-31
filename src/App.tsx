@@ -3,6 +3,7 @@ import Home from "@/pages/Home";
 import Destination from "@/pages/Destination";
 import Feed from "@/pages/Feed";
 import Profile from "@/pages/Profile";
+import FaQ from "@/pages/FaQ";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/feed" element={<Feed />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/faq" element={<FaQ />} />
         </Routes>
       </BrowserRouter>
     </div>

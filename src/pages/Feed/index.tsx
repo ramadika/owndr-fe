@@ -1,9 +1,9 @@
 // import Sidebar from "@/components/elements/Sidebar";
-import FeedContent from "@/components/fragments/Feed-content";
-import FeedForm from "@/components/fragments/Form-feed-section";
-import Discover from "@/components/fragments/Discover-feed-section";
-import Destination from "@/components/fragments/Destination-feed-section";
-import Navbar from "@/components/fragments/Navbar-feed-section";
+import FeedContent from "@/components/fragments/Feed-content-section";
+import FeedForm from "@/components/fragments/Feed-form-section";
+import Discover from "@/components/fragments/Feed-discover-section";
+import Destination from "@/components/fragments/Feed-explore-destination-section";
+import Navbar from "@/components/fragments/Feed-navbar-section";
 import Donate from "@/components/fragments/Donate-floating-section";
 
 export default function index() {

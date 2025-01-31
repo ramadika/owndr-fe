@@ -4,20 +4,27 @@ import {
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
+  Avatar,
 } from "@nextui-org/react";
+import { FaRegPenToSquare } from "react-icons/fa6";
 
 export default function App() {
   return (
-    <Navbar isBlurred={false}>
+    <Navbar className="py-4 backdrop-blur-2xl cursor-pointer">
       <NavbarContent justify="start">
         <NavbarBrand>
-          <img
-            src="/owndr-high-resolution-logo-transparent-cropped.svg"
-            alt="company-logo"
-            width={100}
-            height={100}
-          />
+          <Link
+            color="foreground"
+            href="/"
+            className="hover:opacity-40 duration-300"
+          >
+            <img
+              src="/owndr-high-resolution-logo-transparent-cropped-blue.svg"
+              alt="company-logo"
+              width={100}
+              height={100}
+            />
+          </Link>
         </NavbarBrand>
         <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
@@ -32,7 +39,7 @@ export default function App() {
           <NavbarItem isActive>
             <Link
               aria-current="page"
-              href="/faq"
+              href="#"
               className="hover:opacity-40 duration-300"
             >
               FAQ
@@ -59,22 +66,23 @@ export default function App() {
         </NavbarContent>
       </NavbarContent>
       <NavbarContent justify="end">
-        <NavbarItem className="lg:flex underline underline-offset-4 text-sm">
+        <NavbarItem className="flex items-center gap-1 text-sm border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300">
+          <FaRegPenToSquare />
           <Link href="#" className="hover:opacity-40 duration-300">
-            Already have an account?
+            Create a story
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={Link}
-            color="primary"
-            href="#"
-            variant="flat"
-            className="border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300"
-          >
-            Sign up
-          </Button>
-        </NavbarItem>
+        <NavbarContent as="div" justify="end">
+          <Avatar
+            isBordered
+            as="button"
+            className="transition-transform"
+            color="secondary"
+            name="Jason Hughes"
+            size="sm"
+            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+          />
+        </NavbarContent>
       </NavbarContent>
     </Navbar>
   );
