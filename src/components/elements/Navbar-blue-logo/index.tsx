@@ -3,18 +3,18 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
 } from "@nextui-org/react";
+import { NavLink } from "react-router";
+import { FaQuestionCircle, FaUserCircle } from "react-icons/fa";
 
 export default function App() {
   return (
     <Navbar isBlurred={false}>
       <NavbarContent justify="start">
         <NavbarBrand>
-          <Link
+          <NavLink
             color="foreground"
-            href="/"
+            to="/"
             className="hover:opacity-40 duration-300"
           >
             <img
@@ -23,26 +23,22 @@ export default function App() {
               width={100}
               height={100}
             />
-          </Link>
+          </NavLink>
         </NavbarBrand>
         <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
-            <Link
-              color="foreground"
-              href="/about"
-              className="hover:opacity-40 duration-300"
-            >
+            <NavLink to="/about" className="hover:opacity-40 duration-300">
               What is Owndr?
-            </Link>
+            </NavLink>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link
-              aria-current="page"
-              href="/faq"
-              className="hover:opacity-40 duration-300"
+            <NavLink
+              to="/faq"
+              className="flex items-center hover:opacity-40 duration-300"
             >
-              FAQ
-            </Link>
+              FAQ&nbsp;
+              <FaQuestionCircle />
+            </NavLink>
           </NavbarItem>
           {/* <NavbarItem isActive>
             <Link
@@ -54,32 +50,26 @@ export default function App() {
             </Link>
           </NavbarItem> */}
           <NavbarItem isActive>
-            <Link
-              aria-current="page"
-              href="#"
-              className="hover:opacity-40 duration-300"
-            >
-              Support us
-            </Link>
+            <NavLink to="#" className="hover:opacity-40 duration-300">
+              Empower the Community &#129309;
+            </NavLink>
           </NavbarItem>
         </NavbarContent>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="lg:flex underline underline-offset-4 text-sm">
-          <Link href="#" className="hover:opacity-40 duration-300">
+          <NavLink to="#" className="hover:opacity-40 duration-300">
             Already have an account?
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            color="primary"
-            href="#"
-            variant="flat"
-            className="border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300"
+          <NavLink
+            to="#"
+            className="flex items-center border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300"
           >
-            Sign up
-          </Button>
+            <FaUserCircle />
+            &nbsp; Sign up
+          </NavLink>
         </NavbarItem>
       </NavbarContent>
     </Navbar>

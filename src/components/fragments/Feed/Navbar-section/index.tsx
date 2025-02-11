@@ -3,19 +3,20 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Avatar,
 } from "@nextui-org/react";
+import { NavLink } from "react-router";
 import { FaRegPenToSquare } from "react-icons/fa6";
+import { FaQuestionCircle } from "react-icons/fa";
 
 export default function App() {
   return (
     <Navbar className="py-4 backdrop-blur-2xl cursor-pointer">
       <NavbarContent justify="start">
         <NavbarBrand>
-          <Link
+          <NavLink
             color="foreground"
-            href="/"
+            to="/"
             className="hover:opacity-40 duration-300"
           >
             <img
@@ -24,53 +25,50 @@ export default function App() {
               width={100}
               height={100}
             />
-          </Link>
+          </NavLink>
         </NavbarBrand>
         <NavbarContent className="sm:flex gap-4 text-sm">
           <NavbarItem>
-            <Link
+            <NavLink
               color="foreground"
-              href="#"
+              to="#"
               className="hover:opacity-40 duration-300"
             >
               What is Owndr?
-            </Link>
+            </NavLink>
           </NavbarItem>
           <NavbarItem isActive>
-            <Link
+            <NavLink
               aria-current="page"
-              href="#"
-              className="hover:opacity-40 duration-300"
+              to="#"
+              className="flex items-center hover:opacity-40 duration-300"
             >
-              FAQ
-            </Link>
+              FAQ&nbsp;
+              <FaQuestionCircle />
+            </NavLink>
           </NavbarItem>
           {/* <NavbarItem isActive>
-            <Link
+            <NavLink
               aria-current="page"
               href="#"
               className="hover:opacity-40 duration-300"
             >
               Contact us
-            </Link>
+            </NavLink>
           </NavbarItem> */}
           <NavbarItem isActive>
-            <Link
-              aria-current="page"
-              href="#"
-              className="hover:opacity-40 duration-300"
-            >
-              Support us
-            </Link>
+            <NavLink to="#" className="hover:opacity-40 duration-300">
+              Empower the Community &#129309;
+            </NavLink>
           </NavbarItem>
         </NavbarContent>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="flex items-center gap-1 text-sm border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300">
           <FaRegPenToSquare />
-          <Link href="#" className="hover:opacity-40 duration-300">
+          <NavLink to="#" className="hover:opacity-40 duration-300">
             Create a story
-          </Link>
+          </NavLink>
         </NavbarItem>
         <NavbarContent as="div" justify="end">
           <Avatar
