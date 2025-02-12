@@ -329,3 +329,105 @@ export const top_listed_dummy = [
     img_alt: "tumpak_-_sewu",
   },
 ];
+
+export const list_of_places_dummy = [
+  {
+    img_src:
+      "https://awsimages.detik.net.id/community/media/visual/2021/06/18/rammang-rammang_169.jpeg?w=1200",
+    img_alt: "rammang_-_rammang",
+    name: "Rammang - rammang",
+    nation: "Indonesia",
+    score: 85,
+    rank: 1,
+    type: "Lake",
+  },
+  {
+    img_src:
+      "https://blog.antavaya.com/wp-content/uploads/2021/01/10-Tempat-Wisata-Banyuwangi-yang-Paling-Indah-dan-Wajib-Dikunjungi.jpg",
+    img_alt: "jawatan_-_benculuk",
+    name: "Jawatan Benculuk",
+    nation: "Indonesia",
+    score: 80,
+    rank: 2,
+    type: "Garden",
+  },
+  {
+    img_src:
+      "https://getlost.id/wp-content/uploads/2022/04/@malthezimakoff.jpg",
+    img_alt: "tumpak_-_sewu",
+    name: "Tumpak sewu",
+    nation: "Indonesia",
+    score: 70,
+    rank: 3,
+    type: "Waterfall",
+  },
+  {
+    img_src:
+      "https://www.fivestars-thailand.com/images/article/display/a_1709046726.jpg",
+    img_alt: "phuket",
+    name: "Phuket",
+    nation: "Thailand",
+    score: 68,
+    rank: 4,
+    type: "Beach",
+  },
+  {
+    img_src:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ju3-qZKk7MBO36JsYd7fPmfSZmFlRM8gHw&s",
+    img_alt: "desert_-_safari",
+    name: "Desert Safari",
+    nation: "United Arab Emirates",
+    score: 65,
+    rank: 5,
+    type: "Desert",
+  },
+  {
+    img_src:
+      "https://news.tamansafari.com/Newsportalv22ok/upload/378_1XDJ2390.jpg",
+    img_alt: "taman_-_safari_-_indonesia_-_bogor",
+    name: "Taman Safari Indonesia Bogor",
+    nation: "Indonesia",
+    score: 50,
+    rank: 6,
+    type: "Park",
+  },
+  {
+    img_src:
+      "https://www.planetware.com/photos-large/INA/indonesia-borobudur.jpg",
+    img_alt: "borobudur_-_temple",
+    name: "Borobudur Temple",
+    nation: "Indonesia",
+    score: 50,
+    rank: 7,
+    type: "Park",
+  },
+  {
+    img_src:
+      "https://sita.badungkab.go.id/images/post/en/uluwatu-temple-badung-bali-66cc33a391958.webp",
+    img_alt: "uluwatu_-_temple",
+    name: "Uluwatu Temple",
+    nation: "Indonesia",
+    score: 50,
+    rank: 8,
+    type: "Temple",
+  },
+  {
+    img_src: "https://img.peapix.com/1354dc02860049f9b48341568dd0ce88_480.jpg",
+    img_alt: "arashiyama_-_bamboo_-_forest",
+    name: "Arashiyama Bamboo Forest",
+    nation: "Japan",
+    score: 48,
+    rank: 9,
+    type: "Forest",
+  },
+  {
+    img_src:
+      "https://www.tokyo-prestige.com/wp-content/uploads/2021/11/tokyo-tower-skytree.jpg",
+    img_alt: "tokyo_-_tower",
+    name: "Tokyo Tower",
+    nation: "Japan",
+    score: 65,
+    rank: 10,
+    type: "Desert",
+  },
+];

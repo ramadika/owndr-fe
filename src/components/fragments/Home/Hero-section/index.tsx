@@ -12,10 +12,9 @@ export default function index() {
       </div>
       <div className="flex px-36 justify-start mt-24">
         <div className="flex flex-col items-start justify-center gap-4">
-          <span className="text-4xl font-bold tracking-wide ">
+          <span className="text-4xl font-bold tracking-wide">
             Find your truth wander
           </span>
-
           <span className="text-sm">
             Experience the freedom to explore with confidence. Our platform
             empowers you to plan trips effortlessly, find destinations that

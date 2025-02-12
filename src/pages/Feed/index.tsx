@@ -3,7 +3,7 @@ import FeedContent from "@/components/fragments/Feed/Content-section";
 import FeedForm from "@/components/fragments/Feed/Form-section";
 import Discover from "@/components/fragments/Feed/Discover-section";
 import Destination from "@/components/fragments/Feed/Explore-destination-section";
-import Navbar from "@/components/fragments/Feed/Navbar-section";
+import Navbar from "@/components/elements/Navbar-content";
 import Donate from "@/components/fragments/Support-us/Floating-button";
 
 export default function index() {

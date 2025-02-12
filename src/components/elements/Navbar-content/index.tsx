@@ -11,7 +11,7 @@ import { FaQuestionCircle } from "react-icons/fa";
 
 export default function App() {
   return (
-    <Navbar className="py-4 backdrop-blur-2xl cursor-pointer">
+    <Navbar className="py-8 backdrop-blur-2xl cursor-pointer">
       <NavbarContent justify="start">
         <NavbarBrand>
           <NavLink
@@ -31,7 +31,7 @@ export default function App() {
           <NavbarItem>
             <NavLink
               color="foreground"
-              to="#"
+              to="/about"
               className="hover:opacity-40 duration-300"
             >
               What is Owndr?
@@ -40,7 +40,7 @@ export default function App() {
           <NavbarItem isActive>
             <NavLink
               aria-current="page"
-              to="#"
+              to="/faq"
               className="flex items-center hover:opacity-40 duration-300"
             >
               FAQ&nbsp;
@@ -48,14 +48,14 @@ export default function App() {
             </NavLink>
           </NavbarItem>
           {/* <NavbarItem isActive>
-            <NavLink
-              aria-current="page"
-              href="#"
-              className="hover:opacity-40 duration-300"
-            >
-              Contact us
-            </NavLink>
-          </NavbarItem> */}
+              <NavLink
+                aria-current="page"
+                href="#"
+                className="hover:opacity-40 duration-300"
+              >
+                Contact us
+              </NavLink>
+            </NavbarItem> */}
           <NavbarItem isActive>
             <NavLink to="#" className="hover:opacity-40 duration-300">
               Empower the Community &#129309;
