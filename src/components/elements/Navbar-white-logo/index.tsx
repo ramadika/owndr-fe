@@ -3,11 +3,16 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  Button,
 } from "@nextui-org/react";
 import { NavLink } from "react-router";
 import { FaQuestionCircle, FaUserCircle } from "react-icons/fa";
+import useStore, { setIsLoginOpen, setIsSignupOpen } from "@/stores/global";
 
 export default function App() {
+  const isLoginOpenHandler = useStore(setIsLoginOpen);
+  const isSignupOpenHandler = useStore(setIsSignupOpen);
+
   return (
     <Navbar isBlurred={false}>
       <NavbarContent justify="start">
@@ -66,19 +71,22 @@ export default function App() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="lg:flex underline underline-offset-4 text-sm">
-          <NavLink to="#" className="hover:opacity-40 duration-300">
+          <Button
+            onPress={() => isLoginOpenHandler(true)}
+            className="hover:opacity-40 duration-300"
+          >
             Already have an account?
-          </NavLink>
+          </Button>
         </NavbarItem>
         <NavbarItem>
-          <NavLink
+          <Button
             color="primary"
-            to="#"
+            onPress={() => isSignupOpenHandler(true)}
             className="flex items-center border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300"
           >
             <FaUserCircle />
-            &nbsp; Sign up
-          </NavLink>
+            Sign up
+          </Button>
         </NavbarItem>
       </NavbarContent>
     </Navbar>
