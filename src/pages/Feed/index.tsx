@@ -1,20 +1,29 @@
-// import Sidebar from "@/components/elements/Sidebar";
 import FeedContent from "@/components/fragments/Feed/Content-section";
-import FeedForm from "@/components/fragments/Feed/Form-section";
+import Hero from "@/components/fragments/Feed/Hero-section";
 import Discover from "@/components/fragments/Feed/Discover-section";
 import Destination from "@/components/fragments/Feed/Explore-destination-section";
 import Navbar from "@/components/elements/Navbar-content";
 import Donate from "@/components/fragments/Support-us/Floating-button";
+import useStore, { isContentFormOpen } from "@/stores/global";
+import Modal from "@/components/elements/Modal-dialog";
+import ContentForm from "@/components/fragments/Feed/Form-section";
 
-export default function index() {
+export default function Index() {
+  const isContentForm = useStore(isContentFormOpen);
+
   return (
     <div>
       <Donate />
       <Navbar />
       <div className="flex flex-col px-16 py-8">
+        {isContentForm && (
+          <Modal>
+            <ContentForm />
+          </Modal>
+        )}
         <div className="flex items-start justify-center gap-12">
           <div className="w-9/12">
-            <FeedForm />
+            <Hero />
           </div>
           <div className="w-3/12">
             <Destination />

@@ -5,6 +5,8 @@ interface GlobalStoreType {
   setIsLoginOpen: (props: boolean) => void;
   isSignupOpen: boolean;
   setIsSignupOpen: (props: boolean) => void;
+  isContentFormOpen: boolean;
+  setIsContentFormOpen: (props: boolean) => void;
 }
 
 const useStore = create<GlobalStoreType>((set) => ({
@@ -12,6 +14,8 @@ const useStore = create<GlobalStoreType>((set) => ({
   setIsLoginOpen: (props) => set({ isLoginOpen: props }),
   isSignupOpen: false,
   setIsSignupOpen: (props) => set({ isSignupOpen: props }),
+  isContentFormOpen: false,
+  setIsContentFormOpen: (props) => set({ isContentFormOpen: props }),
 }));
 
 export const isLoginOpen = (state: GlobalStoreType) => state.isLoginOpen;
@@ -19,5 +23,9 @@ export const setIsLoginOpen = (state: GlobalStoreType) => state.setIsLoginOpen;
 export const isSignupOpen = (state: GlobalStoreType) => state.isSignupOpen;
 export const setIsSignupOpen = (state: GlobalStoreType) =>
   state.setIsSignupOpen;
+export const isContentFormOpen = (state: GlobalStoreType) =>
+  state.isContentFormOpen;
+export const setIsContentFormOpen = (state: GlobalStoreType) =>
+  state.setIsContentFormOpen;
 
 export default useStore;

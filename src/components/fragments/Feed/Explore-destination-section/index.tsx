@@ -26,7 +26,7 @@ export default function Index() {
         ))}
       </div>
       <NavLink
-        to="/feed"
+        to="/destination"
         className="text-[#ea598e] text-xs mt-2 underline underline-offset-4 hover:opacity-40 duration-300"
       >
         Explore More &#8594;

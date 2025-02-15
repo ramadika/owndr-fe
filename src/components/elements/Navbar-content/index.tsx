@@ -4,12 +4,16 @@ import {
   NavbarContent,
   NavbarItem,
   Avatar,
+  Button,
 } from "@nextui-org/react";
 import { NavLink } from "react-router";
 import { FaRegPenToSquare } from "react-icons/fa6";
 import { FaQuestionCircle } from "react-icons/fa";
+import useStore, { setIsContentFormOpen } from "@/stores/global";
 
 export default function App() {
+  const isContentFormOpenHandler = useStore(setIsContentFormOpen);
+
   return (
     <Navbar className="py-8 backdrop-blur-2xl cursor-pointer">
       <NavbarContent justify="start">
@@ -47,18 +51,27 @@ export default function App() {
               <FaQuestionCircle />
             </NavLink>
           </NavbarItem>
-          {/* <NavbarItem isActive>
-              <NavLink
-                aria-current="page"
-                href="#"
-                className="hover:opacity-40 duration-300"
-              >
-                Contact us
-              </NavLink>
-            </NavbarItem> */}
           <NavbarItem isActive>
             <NavLink to="#" className="hover:opacity-40 duration-300">
               Empower the Community &#129309;
+            </NavLink>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <NavLink
+              aria-current="page"
+              to="/feed"
+              className="hover:opacity-40 duration-300"
+            >
+              Feed &#128240;
+            </NavLink>
+          </NavbarItem>
+          <NavbarItem isActive>
+            <NavLink
+              aria-current="page"
+              to="/destination"
+              className="hover:opacity-40 duration-300"
+            >
+              Destination &#128205;
             </NavLink>
           </NavbarItem>
         </NavbarContent>
@@ -66,9 +79,12 @@ export default function App() {
       <NavbarContent justify="end">
         <NavbarItem className="flex items-center gap-1 text-sm border border-[#ffafcc] text-[#ea598e] rounded-lg py-1 px-4 hover:opacity-40 duration-300">
           <FaRegPenToSquare />
-          <NavLink to="#" className="hover:opacity-40 duration-300">
+          <Button
+            onPress={() => isContentFormOpenHandler(true)}
+            className="hover:opacity-40 duration-300"
+          >
             Create a story
-          </NavLink>
+          </Button>
         </NavbarItem>
         <NavbarContent as="div" justify="end">
           <Avatar
