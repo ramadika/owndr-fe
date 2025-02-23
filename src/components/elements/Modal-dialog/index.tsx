@@ -15,7 +15,7 @@ export default function Index({ children }: any) {
       />
 
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-        <div className="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
+        <div className="min-h-full flex items-center justify-center p-4 sm:items-center sm:p-0">
           {children}
         </div>
       </div>

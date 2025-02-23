@@ -13,7 +13,7 @@ export default function Index() {
       >
         <IoClose size={24} />
       </button>
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
+      <div className="text-center sm:mx-auto sm:w-full sm:max-w-md">
         <img
           alt="owndr-logo"
           src="/owndr-high-resolution-logo-transparent-cropped-blue.svg"

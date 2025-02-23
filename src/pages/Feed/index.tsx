@@ -4,18 +4,25 @@ import Discover from "@/components/fragments/Feed/Discover-section";
 import Destination from "@/components/fragments/Feed/Explore-destination-section";
 import Navbar from "@/components/elements/Navbar-content";
 import Donate from "@/components/fragments/Support-us/Floating-button";
-import useStore, { isContentFormOpen } from "@/stores/global";
+import Comment from "@/components/fragments/Feed/Comment-section";
+import useStore, { isContentFormOpen, isCommentOpen } from "@/stores/global";
 import Modal from "@/components/elements/Modal-dialog";
 import ContentForm from "@/components/fragments/Feed/Form-section";
 
 export default function Index() {
   const isContentForm = useStore(isContentFormOpen);
+  const isComment = useStore(isCommentOpen);
 
   return (
     <div>
       <Donate />
       <Navbar />
       <div className="flex flex-col px-16 py-8">
+        {isComment !== "" && (
+          <Modal>
+            <Comment />
+          </Modal>
+        )}
         {isContentForm && (
           <Modal>
             <ContentForm />
