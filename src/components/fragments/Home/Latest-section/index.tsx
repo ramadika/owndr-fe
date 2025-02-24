@@ -1,10 +1,14 @@
+import { Button } from "@nextui-org/react";
 import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
 import { popular_dummy } from "@/utils/contants";
+import useStore, { setIsCommentOpen } from "@/stores/global";
 
 export default function Index() {
+  const isCommentOpenHandler = useStore(setIsCommentOpen);
+
   return (
     <div className="flex flex-col mb-12 px-36">
       <div className="flex justify-between items-start">
@@ -62,15 +66,18 @@ export default function Index() {
                 <ProgressBar />
               </div>
               <div className="flex items-center gap-2 mt-4">
-                <div className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
+                <Button className="flex items-center gap-2 rounded-lg border border-[#bbd5b4] text-[#59824e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
                   <FaCircleCheck />
-                </div>
-                <div className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
+                </Button>
+                <Button className="flex items-center gap-2 rounded-lg border border-[#ffafcc] text-[#ea598e] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
                   <FaCircleXmark />
-                </div>
-                <div className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300">
+                </Button>
+                <Button
+                  onPress={() => isCommentOpenHandler("1")}
+                  className="flex items-center gap-2 rounded-lg border border-[#acb0b7] text-[#63728c] text-sm px-3 py-2 cursor-pointer hover:opacity-40 duration-300"
+                >
                   <FaCommentDots />
-                </div>
+                </Button>
               </div>
             </div>
           </div>
