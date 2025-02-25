@@ -4,18 +4,18 @@ import { popular_places_dummy } from "@/utils/contants";
 export default function Index() {
   return (
     <div className="w-full">
-      <div className="flex flex-col mb-12 px-36">
+      <div className="flex flex-col mb-12 px-36 sm:px-8 xs:px-8">
         <div className="flex flex-col items-center justify-center">
           <h2 className="font-semibold text-2xl">
             Discover the most sought-after destinations curated by our
             community!
           </h2>
-          <h5>
+          <h5 className="sm:text-xs xs:text-xs">
             Our Top Listed Destinations are ranked based on destination scores,
             reflecting the collective insights of travelers just like you.
           </h5>
         </div>
-        <div className="mt-4 flex gap-6 items-center justify-center">
+        <div className="mt-4 flex gap-6 items-center justify-center md:flex-wrap sm:flex-wrap xs:flex-wrap">
           {popular_places_dummy.map((item) => (
             <div className="relative w-48 h-48">
               {/* Image */}
