@@ -22,7 +22,7 @@ export default function Index() {
   const isSignupOpenHandler = useStore(setIsSignupOpen);
 
   return (
-    <header className="text-white navbar">
+    <header className="text-white">
       <nav
         className="mx-auto flex items-center px-8 lg:justify-between md:justify-between sm:justify-between xs:justify-between"
         aria-label="Global"
