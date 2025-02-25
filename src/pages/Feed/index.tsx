@@ -17,7 +17,7 @@ export default function Index() {
     <div>
       <Donate />
       <Navbar />
-      <div className="flex flex-col px-16 py-8">
+      <div className="flex flex-col px-16 py-8 mt-20">
         {isComment !== "" && (
           <Modal>
             <Comment />

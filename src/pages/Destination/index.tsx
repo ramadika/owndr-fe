@@ -8,7 +8,7 @@ export default function Index() {
     <div>
       <Donate />
       <Navbar />
-      <div className="flex flex-col px-16 py-16">
+      <div className="flex flex-col px-16 py-16 mt-12">
         <Header />
         <ListPlaces />
       </div>

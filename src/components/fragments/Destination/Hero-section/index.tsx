@@ -18,7 +18,7 @@ export default function Index() {
             name="posting-name"
             type="text"
             placeholder="Where do you want to go next?"
-            className="w-4/12 py-4 px-8 text-black bg-white border-0 rounded-full shadow-sm text-center ring-1 ring-inset ring-[#103f66] focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6"
+            className="w-4/12 py-4 px-8 text-black bg-white border-0 rounded-full shadow-sm text-center ring-1 ring-inset ring-[#103f66] focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm/6 sm:w-full xs:w-full md:w-full"
           />
         </form>
       </div>
