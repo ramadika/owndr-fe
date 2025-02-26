@@ -1,6 +1,7 @@
 import useStore, { setIsContentFormOpen } from "@/stores/global";
 import { IoClose } from "react-icons/io5";
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
+import { PhotoIcon } from "@heroicons/react/24/solid";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 export default function Index() {
   const isContentFormOpenHandler = useStore(setIsContentFormOpen);
@@ -69,7 +70,7 @@ export default function Index() {
                   </p>
                 </div>
 
-                <div className="col-span-full">
+                {/* <div className="col-span-full">
                   <label
                     htmlFor="photo"
                     className="block text-sm/6 font-medium text-gray-900"
@@ -88,6 +89,29 @@ export default function Index() {
                       Change
                     </button>
                   </div>
+                </div> */}
+                <div>
+                  <label
+                    htmlFor="search"
+                    className="block text-sm/6 font-medium text-gray-900"
+                  >
+                    Location
+                  </label>
+                  <div className="mt-2">
+                    <div className="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-[#103f66]">
+                      <input
+                        id="search"
+                        name="search"
+                        type="text"
+                        className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                      />
+                      <div className="flex py-1.5 pr-1.5">
+                        <kbd className="inline-flex items-center rounded-sm border border-gray-200 p-1 font-sans text-xs text-gray-400">
+                          <FaMagnifyingGlass />
+                        </kbd>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="col-span-full">
@@ -95,7 +119,7 @@ export default function Index() {
                     htmlFor="cover-photo"
                     className="block text-sm/6 font-medium text-gray-900"
                   >
-                    Cover photo
+                    Attachment
                   </label>
                   <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                     <div className="text-center">
@@ -119,7 +143,7 @@ export default function Index() {
                         <p className="pl-1">or drag and drop</p>
                       </div>
                       <p className="text-xs/5 text-gray-600">
-                        PNG, JPG, GIF up to 10MB
+                        PNG, JPG, MP4 up to 10MB
                       </p>
                     </div>
                   </div>
