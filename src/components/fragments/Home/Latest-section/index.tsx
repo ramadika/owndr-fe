@@ -46,7 +46,15 @@ export default function Index() {
             {/* Overlay Content */}
             <div>
               <div className="flex items-center gap-4">
-                <h4 className="font-semibold text-xs">{item.author}</h4>
+                <NavLink
+                  to={{
+                    pathname: "/profile",
+                    search: `?q=${item.author}`,
+                  }}
+                  className="font-semibold text-xs hover:opacity-40 duration-300"
+                >
+                  {item.author}
+                </NavLink>
                 <span className="text-xs text-slate-400">
                   {item.created_at}
                 </span>

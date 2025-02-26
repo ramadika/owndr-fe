@@ -1,5 +1,6 @@
 // import { useFeed } from "../hooks";
 import { Button } from "@nextui-org/react";
+import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { BsTranslate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
@@ -42,7 +43,15 @@ export default function Index() {
           />
           <div className="flex items-center gap-2">
             {/* <img src="" alt="" /> */}
-            <h4 className="font-semibold text-xs">{item.author}</h4>
+            <NavLink
+              to={{
+                pathname: "/profile",
+                search: `?q=${item.author}`,
+              }}
+              className="font-semibold text-xs hover:opacity-40 duration-300"
+            >
+              {item.author}
+            </NavLink>
             <span className="text-xs text-slate-400">{item.created_at}</span>
           </div>
           <h2 className="text-3xl font-semibold sm:text-xl xs:text-xl">

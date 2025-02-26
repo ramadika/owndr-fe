@@ -1,4 +1,5 @@
 import { Button } from "@nextui-org/react";
+import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
@@ -23,7 +24,15 @@ export default function Index() {
         />
         <div>
           <div className="flex items-center gap-4">
-            <h4 className="font-semibold text-xs">Johan Redd</h4>
+            <NavLink
+              to={{
+                pathname: "/profile",
+                search: "?q=Johan Redd",
+              }}
+              className="font-semibold text-xs hover:opacity-40 duration-300"
+            >
+              Johan Redd
+            </NavLink>
             <span className="text-xs text-slate-400">Few minutes ago</span>
           </div>
           <a
