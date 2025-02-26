@@ -11,8 +11,8 @@ import {
   Bars3Icon,
   HomeIcon,
   XMarkIcon,
-  GlobeAltIcon,
-  ChatBubbleBottomCenterIcon,
+  NewspaperIcon,
+  MapPinIcon,
 } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -20,13 +20,13 @@ const navigation = [
   {
     name: "Feed",
     href: "/feed",
-    icon: ChatBubbleBottomCenterIcon,
+    icon: NewspaperIcon,
     current: false,
   },
   {
     name: "Destination",
     href: "/destination",
-    icon: GlobeAltIcon,
+    icon: MapPinIcon,
     current: false,
   },
 ];
@@ -90,7 +90,7 @@ export default function Index({ children }: any) {
                               to={item.href}
                               className={classNames(
                                 item.current
-                                  ? "bg-gray-50 text-indigo-600"
+                                  ? "bg-gray-50 text-[#103f66]"
                                   : "text-gray-700 hover:bg-gray-50 hover:text-[#103f66]",
                                 "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                               )}
@@ -99,7 +99,7 @@ export default function Index({ children }: any) {
                                 aria-hidden="true"
                                 className={classNames(
                                   item.current
-                                    ? "text-indigo-600"
+                                    ? "text-[#103f66]"
                                     : "text-gray-400 group-hover:text-[#103f66]",
                                   "size-6 shrink-0"
                                 )}
@@ -138,7 +138,7 @@ export default function Index({ children }: any) {
                           to={item.href}
                           className={classNames(
                             item.current
-                              ? "bg-gray-50 text-indigo-600"
+                              ? "bg-gray-50 text-[#103f66]"
                               : "text-gray-700 hover:bg-gray-50 hover:text-[#103f66]",
                             "group flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold"
                           )}
@@ -147,7 +147,7 @@ export default function Index({ children }: any) {
                             aria-hidden="true"
                             className={classNames(
                               item.current
-                                ? "text-indigo-600"
+                                ? "text-[#103f66]"
                                 : "text-gray-400 group-hover:text-[#103f66]",
                               "size-6 shrink-0"
                             )}
