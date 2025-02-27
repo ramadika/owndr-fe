@@ -186,9 +186,6 @@ export default function Index({ children }: any) {
             <span className="sr-only">Open sidebar</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
-          <div className="flex-1 text-sm/6 font-semibold text-gray-900">
-            Dashboard
-          </div>
           <NavLink to="#">
             <span className="sr-only">Your profile</span>
             <img

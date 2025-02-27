@@ -25,25 +25,20 @@ export default function Index() {
         <div>
           <div className="flex items-center gap-4">
             <NavLink
-              to={{
-                pathname: "/profile",
-                search: "?q=Johan Redd",
-              }}
+              to={`/profile/johanredd`}
               className="font-semibold text-xs hover:opacity-40 duration-300"
             >
               Johan Redd
             </NavLink>
             <span className="text-xs text-slate-400">Few minutes ago</span>
           </div>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://maps.app.goo.gl/bGXXT29tBaiCL6dR7"
+          <NavLink
+            to={`/destination/rammangrammang`}
             className="hover:opacity-40 duration-300 flex items-center gap-1 underline underline-offset-4 text-[#0077b6] my-1"
           >
             <IoLocationSharp size={12} />
             <span className="text-xs font-semibold">Rammang-rammang</span>
-          </a>
+          </NavLink>
           <h2 className="text-3xl font-semibold sm:text-xl xs:text-xl">
             Lorem ipsum dolor sit amet
           </h2>

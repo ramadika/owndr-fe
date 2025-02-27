@@ -47,10 +47,9 @@ export default function Index() {
             <div>
               <div className="flex items-center gap-4">
                 <NavLink
-                  to={{
-                    pathname: "/profile",
-                    search: `?q=${item.author}`,
-                  }}
+                  to={`/profile/${item.author
+                    .replace(/[\s-]/g, "")
+                    .toLowerCase()}`}
                   className="font-semibold text-xs hover:opacity-40 duration-300"
                 >
                   {item.author}
@@ -59,15 +58,15 @@ export default function Index() {
                   {item.created_at}
                 </span>
               </div>
-              <a
-                target="_blank"
-                rel="noopener"
-                href={item.place_url}
+              <NavLink
+                to={`/destination/${item.place_name
+                  .replace(/[\s-]/g, "")
+                  .toLowerCase()}`}
                 className="hover:opacity-40 duration-300 flex items-center gap-1 underline underline-offset-4 text-[#0077b6] my-1"
               >
                 <IoLocationSharp size={12} />
                 <span className="text-xs font-semibold">{item.place_name}</span>
-              </a>
+              </NavLink>
               <h2 className="text-lg font-semibold sm:text-base xs:text-base">
                 {item.title}
               </h2>

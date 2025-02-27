@@ -1,9 +1,8 @@
+import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { BsTranslate } from "react-icons/bs";
-import { IoLocationSharp } from "react-icons/io5";
 import ProgressBar from "@/components/elements/Progress";
 import { feed_profile_dummy_data } from "@/utils/contants";
-import { NavLink } from "react-router-dom";
 
 export default function Index() {
   return (
@@ -18,20 +17,17 @@ export default function Index() {
             height={100}
           />
           <div className="flex items-center gap-2">
+            <NavLink
+              to={`/profile/${item.author.replace(/[\s-]/g, "").toLowerCase()}`}
+              className="font-semibold text-xs hover:opacity-40 duration-300"
+            >
+              {item.author}
+            </NavLink>
             <span className="text-xs text-slate-400">{item.created_at}</span>
           </div>
           <h2 className="text-3xl font-semibold sm:text-xl xs:text-xl">
             {item.title}
           </h2>
-          <NavLink
-            to={`/destination/${item.place_name
-              .replace(/[\s-]/g, "")
-              .toLowerCase()}`}
-            className="hover:opacity-40 duration-300 flex items-center gap-1 underline underline-offset-4 text-[#0077b6]"
-          >
-            <IoLocationSharp />
-            <span className="text-sm font-semibold">{item.place_name}</span>
-          </NavLink>
           <div className="gap-2 flex flex-col tracking-wide text-default-700">
             <h2 className="sm:text-xs xs:text-xs">{item.desc}</h2>
             <div className="flex justify-between w-fit gap-2 items-center border rounded-full px-4 py-2 text-xs border-slate-800">

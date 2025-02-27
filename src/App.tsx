@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "@/pages/Home";
 import Destination from "@/pages/Destination";
+import Place from "@/pages/Destination/Place";
 import Feed from "@/pages/Feed";
 import Profile from "@/pages/Profile";
 import FaQ from "@/pages/FaQ";
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destination" element={<Destination />} />
+          <Route path="/destination/:name" element={<Place />} />
           <Route path="/feed" element={<Feed />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/:name" element={<Profile />} />
           <Route path="/faq" element={<FaQ />} />
           <Route path="/about" element={<About />} />
         </Routes>
