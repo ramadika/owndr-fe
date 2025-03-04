@@ -118,7 +118,7 @@ export default function Index() {
             ))}
           </div>
           <p className="mt-10 text-center text-sm/6 text-gray-400">
-            &copy; 2024 Owndr. All rights reserved.
+            &copy; 2024 Langkah Labs. All rights reserved.
           </p>
         </div>
       </footer>

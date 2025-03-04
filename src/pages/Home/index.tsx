@@ -1,7 +1,7 @@
 import Hero from "@/components/fragments/Home/Hero-section";
 // import Feed from "@/components/fragments/Feed-section";
 import ExploreDestination from "@/components/fragments/Home/Explore-destination-section";
-import PopularFeed from "@/components/fragments/Home/Popular-section";
+import FeaturedHighlight from "@/components/fragments/Home/Featured-highlight-section";
 import LatestFeed from "@/components/fragments/Home/Latest-section";
 import Footer from "@/components/elements/Footer";
 // import Navbar from "@/components/elements/Navbar";
@@ -42,7 +42,7 @@ export default function Index() {
         )}
         {/* <Navbar /> */}
         <Hero />
-        <PopularFeed />
+        <FeaturedHighlight />
         <LatestFeed />
         <ExploreDestination />
         <Footer />

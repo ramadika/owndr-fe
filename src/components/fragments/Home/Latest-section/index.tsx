@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/react";
 import { NavLink } from "react-router";
 import { FaCircleCheck, FaCommentDots, FaCircleXmark } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
+import { HiNewspaper } from "react-icons/hi2";
 import ProgressBar from "@/components/elements/Progress";
 import { popular_dummy } from "@/utils/contants";
 import useStore, { setIsCommentOpen } from "@/stores/global";
@@ -21,14 +22,6 @@ export default function Index() {
             Stay updated with the latest posts, updates, and activities
             happening right now. Explore what's trending and never miss a beat.
           </h5>
-        </div>
-        <div className="mt-2">
-          <NavLink
-            to="/feed"
-            className="text-sm bg-[#ea598e] text-white rounded-lg px-4 py-1 font-semibold hover:opacity-40 duration-300"
-          >
-            See all &#8594;
-          </NavLink>
         </div>
       </div>
       <div className="mt-4 flex gap-6 items-center justify-center md:flex-wrap sm:flex-wrap xs:flex-wrap">
@@ -70,7 +63,7 @@ export default function Index() {
               <h2 className="text-lg font-semibold sm:text-base xs:text-base">
                 {item.title}
               </h2>
-              <h5 className="text-sm sm:text-xs xs:text-xs">{item.desc}</h5>
+              <h5 className="text-xs">{item.desc}</h5>
               <div className="mt-6">
                 <ProgressBar />
               </div>
@@ -91,6 +84,15 @@ export default function Index() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center mt-8 mb-6">
+        <NavLink
+          to="/feed"
+          className="flex gap-2 items-center text-base bg-[#ea598e] text-white rounded-xl px-16 py-2 tracking-wide font-semibold hover:opacity-40 duration-300"
+        >
+          <HiNewspaper />
+          View all posts
+        </NavLink>
       </div>
     </div>
   );

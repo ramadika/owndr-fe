@@ -9,7 +9,7 @@ export default function Index() {
   const isCommentOpenHandler = useStore(setIsCommentOpen);
 
   return (
-    <div className="flex flex-col gap-4 px-36 mt-8 mb-12 sm:px-8 xs:px-8">
+    <div className="flex flex-col gap-4 px-36 mt-8 mb-8 sm:px-8 xs:px-8">
       <div className="flex items-center gap-2">
         <div className="w-2 h-6 bg-[#103f66]"></div>
         <h2 className="font-semibold text-2xl">Featured Highlight</h2>

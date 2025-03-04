@@ -108,9 +108,8 @@ export default function Index() {
                   </span>
                 </NavLink>
                 <h2 className="text-base font-semibold">{item.title}</h2>
-                <h5 className="sm:text-xs xs:text-xs">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed...
+                <h5 className="text-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 </h5>
                 <div className="mt-2">
                   <ProgressBar />
